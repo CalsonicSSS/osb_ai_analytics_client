@@ -44,6 +44,7 @@ export function Sidebar() {
       {/* Sidebar Header */}
       <div className={`transition-all py-6 mb-5 duration-300 ease-in-out ${isCollapsed ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 h-auto'}`}>
         <h1 className='text-xl font-bold text-center'>Analytics & Report</h1>
+        <h1 className='text-xl font-bold text-center'>(by Calson Sheng)</h1>
       </div>
 
       {/* Sidebar Navigation */}
