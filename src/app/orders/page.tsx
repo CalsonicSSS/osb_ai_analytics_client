@@ -1,10 +1,10 @@
 'use client';
 
-import { DownloadReportButton } from '@/components/custom/DownloadReport';
-import { OrderQuantityAnalysis } from '@/components/custom/orders/OrderQtyAnalysis';
-import { OrderStatusOverview } from '@/components/custom/orders/OrderStatusOverview';
-import { ProductClassDistribution } from '@/components/custom/orders/ProductClassDistribution';
-import { TopStockItems } from '@/components/custom/orders/TopStockItems';
+import { DownloadReportButton } from '@/components/layout/DownloadReport';
+import { OrderQuantityAnalysis } from '@/components/orders/OrderQtyAnalysis';
+import { OrderStatusOverview } from '@/components/orders/OrderStatusOverview';
+import { ProductClassDistribution } from '@/components/orders/ProductClassDistribution';
+import { TopStockItems } from '@/components/orders/TopStockItems';
 // import { TopStockItems } from '@/components/orders/TopStockItems';
 // import { ProductClassDistribution } from '@/components/orders/ProductClassDistribution';
 import { Card } from '@/components/ui/card';

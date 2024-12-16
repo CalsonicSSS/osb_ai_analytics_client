@@ -1,4 +1,4 @@
-import { FilterState } from '@/components/custom/orders/OrderQtyAnalysis/index';
+import { FilterState } from '@/components/orders/OrderQtyAnalysis/index';
 
 // This function will clean the FilterState by removing null values
 export const cleanFilters = (filters: FilterState): Record<string, string> => {

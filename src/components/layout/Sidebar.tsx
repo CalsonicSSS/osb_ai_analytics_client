@@ -4,10 +4,9 @@ import { LogOutIcon, ListOrdered, BadgeDollarSign, Bot, ChevronLeft, ChevronRigh
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation'; // Import Next.js hooks
+import { usePathname } from 'next/navigation'; // Import Next.js hooks
 
 export function Sidebar() {
-  const router = useRouter(); // For auto-navigation
   const pathname = usePathname(); // For detecting the current path
   const [menuSelected, setMenuSelected] = useState<string>('Orders Analytics');
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false); // Sidebar collapse state
@@ -19,20 +18,13 @@ export function Sidebar() {
     { icon: Bot, label: 'AI Workflow', navLink: '/ai' },
   ];
 
-  // Automatically navigate to "Orders Analytics" on initial load
-  useEffect(() => {
-    if (pathname === '/') {
-      router.push('/orders'); // Redirect to '/orders' when on the root path
-    }
-  }, [pathname, router]);
-
   // Update selected menu item based on the current path
   useEffect(() => {
     const selectedItem = menuItems.find((item) => item.navLink === pathname);
     if (selectedItem) {
       setMenuSelected(selectedItem.label);
     }
-  }, [pathname]);
+  }, [pathname, menuItems]);
 
   // Toggle sidebar collapse
   const toggleCollapse = () => {
