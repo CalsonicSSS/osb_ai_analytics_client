@@ -13,7 +13,7 @@ const WelcomePopup = () => {
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
       <AlertDialogContent className='max-w-xl'>
         <AlertDialogHeader>
-          <AlertDialogTitle className='text-2xl font-bold'>Welcome to Calson's Full-Stack AI & Data Portfolio App!</AlertDialogTitle>
+          <AlertDialogTitle className='text-2xl font-bold'>Welcome to Calson&apos;s Full-Stack AI & Data Portfolio App!</AlertDialogTitle>
           <AlertDialogDescription className='space-y-4'>
             <p className='text-lg'>This portfolio showcases my expertise in building modern, full-stack applications with a focus on AI and data analytics.</p>
             <div className='flex flex-wrap gap-2'>
