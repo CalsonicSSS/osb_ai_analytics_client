@@ -15,7 +15,9 @@ const WelcomePopup = () => {
         <AlertDialogHeader>
           <AlertDialogTitle className='text-2xl font-bold'>Welcome to Calson&apos;s Full-Stack AI & Data Portfolio App!</AlertDialogTitle>
           <AlertDialogDescription className='space-y-4'>
-            <p className='text-lg'>This portfolio showcases my expertise in building modern, full-stack applications with a focus on AI and data analytics.</p>
+            <p className='text-lg'>
+              This showcases my expertise in building modern, full-stack applications with a focus on AI and data analytics driven from Client Engagement & Needs.
+            </p>
             <div className='flex flex-wrap gap-2'>
               {technologies.map((tech) => (
                 <Badge key={tech} variant='secondary' className='px-3 py-1 text-sm bg-[#f1bf28]'>
