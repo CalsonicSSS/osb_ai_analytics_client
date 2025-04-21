@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@/components/ui/alert-dialog';
 import { Badge } from '@/components/ui/badge';
 
-const technologies = ['FastAPI', 'Python', 'Next.js 14', 'Tailwind CSS', 'shadcn/ui', 'Type-Safe', 'AWS LightSail & RDS', 'PostgreSQL'];
+const technologies = ['FastAPI', 'Python (pandas / numpy)', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Type-Safe', 'AWS LightSail & RDS', 'PostgreSQL', 'Airflow'];
 
 const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(true);
